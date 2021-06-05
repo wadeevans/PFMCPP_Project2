@@ -94,82 +94,82 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  1)
  */
  bool feedCat(int tinsOfCatFood, bool haveCatBowl = true) 
- {
+{
     ignoreUnused(tinsOfCatFood, haveCatBowl);
     return {};
- }
+}
 /*
  2)
  */
- float centigradeToFahrenheit(float degreesCentigrade)
- {
-     ignoreUnused(degreesCentigrade);
-     return {};
- }
+float centigradeToFahrenheit(float degreesCentigrade)
+{
+    ignoreUnused(degreesCentigrade);
+    return {};
+}
 
 /*
  3)
  */
- int addThreeNumbers(int first, int second = 2, int third = 5)
- {
-     ignoreUnused(first, second, third);
-     return {};
- }
+int addThreeNumbers(int first, int second = 2, int third = 5)
+{
+    ignoreUnused(first, second, third);
+    return {};
+}
 /*
  4)
  */
- void walkDogs(int numberOfDogs = 1)
- {
-     ignoreUnused(numberOfDogs);
- }
+void walkDogs(int numberOfDogs = 1)
+{
+    ignoreUnused(numberOfDogs);
+}
 /*
  5)
  */
- char largerCharacter(char char1, char char2)
- {
-     ignoreUnused(char1, char2);
-     return {};
- }
+char largerCharacter(char char1, char char2)
+{
+    ignoreUnused(char1, char2);
+    return {};
+}
 /*
  6)
  */
- double calculateSpeed(double distanceInKilometers, double timeInHours)
- {
-     ignoreUnused(distanceInKilometers, timeInHours);
-     return {};
- } 
+double calculateSpeed(double distanceInKilometers, double timeInHours)
+{
+    ignoreUnused(distanceInKilometers, timeInHours);
+    return {};
+} 
 /*
  7)
  */
- int countDigits(int largeNumber)
- {
-     ignoreUnused(largeNumber);
-     return {};
- }
+int countDigits(int largeNumber)
+{
+    ignoreUnused(largeNumber);
+    return {};
+}
 /*
  8)
  */
- double squareRoot(double number)
- {
-     ignoreUnused(number);
-     return {};
- }
+double squareRoot(double number)
+{
+    ignoreUnused(number);
+    return {};
+}
 /*
  9)
  */
- bool isGreaterThan(int num1, int num2)
- {
-     ignoreUnused(num1, num2);
-     return {};
- }
+bool isGreaterThan(int num1, int num2)
+{
+    ignoreUnused(num1, num2);
+    return {};
+}
 /*
  10)
  */
- bool hasCreatedEnoughFunctions(int numberOfFunctionsCreated)
- {
-     ignoreUnused(numberOfFunctionsCreated);
-     return {};
- }
+bool hasCreatedEnoughFunctions(int numberOfFunctionsCreated)
+{
+    ignoreUnused(numberOfFunctionsCreated);
+    return {};
+}
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
