@@ -16,16 +16,14 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of all of the primitives available in C++ (excluding wchar_t) here: 
  
+ Integer int 
+ Character char
+ Boolean bool
+ Floating Point float 
+ Double Floating Point double
+ Void void
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
     a) give each variable declaration an initial value
         - just ignore wchar_t. you do not need to declare 3 variables of type 'wchar_t'
@@ -56,11 +54,30 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
-    
-    
+    int numberOfDays = 40;
+    int numberOfNights = 40;
+    int numberOfArabianNights = 1001;
+
+    char alpha = 'a';
+    char beta = 'b';
+    char gamma = 'c';
+
+    bool isOn = true;
+    bool isOff = false;
+    bool test = true;
+
+    float degreesCentigrade = 25.4f;
+    float degreesFahrenheit = 12.67f;
+    float rootTwo = 1.4142f;
+
+    double heightInMeters = 1.65;
+    double weightInKilos = 95.0;
+    double bmi = 28.5;
+
+
 
     
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, numberOfDays, numberOfNights, numberOfArabianNights, alpha, beta, gamma, isOn, isOff, test, degreesCentigrade, degreesFahrenheit, rootTwo, heightInMeters, weightInKilos, bmi); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -71,48 +88,88 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 { 
     ignoreUnused(rentalDuration, carType); //passing each function parameter to the ignoreUnused() function
     return {}; //if your function returns something other than void, add 'return {};' at the end of it.
-} 
+}
 
 /*
  1)
  */
-
+ bool feedCat(int tinsOfCatFood, bool haveCatBowl = true) 
+{
+    ignoreUnused(tinsOfCatFood, haveCatBowl);
+    return {};
+}
 /*
  2)
  */
+float centigradeToFahrenheit(float degreesCentigrade)
+{
+    ignoreUnused(degreesCentigrade);
+    return {};
+}
 
 /*
  3)
  */
-
+int addThreeNumbers(int first, int second = 2, int third = 5)
+{
+    ignoreUnused(first, second, third);
+    return {};
+}
 /*
  4)
  */
-
+void walkDogs(int numberOfDogs = 1)
+{
+    ignoreUnused(numberOfDogs);
+}
 /*
  5)
  */
-
+char largerCharacter(char char1, char char2)
+{
+    ignoreUnused(char1, char2);
+    return {};
+}
 /*
  6)
  */
-
+double calculateSpeed(double distanceInKilometers, double timeInHours)
+{
+    ignoreUnused(distanceInKilometers, timeInHours);
+    return {};
+} 
 /*
  7)
  */
-
+int countDigits(int largeNumber)
+{
+    ignoreUnused(largeNumber);
+    return {};
+}
 /*
  8)
  */
-
+double squareRoot(double number)
+{
+    ignoreUnused(number);
+    return {};
+}
 /*
  9)
  */
-
+bool isGreaterThan(int num1, int num2)
+{
+    ignoreUnused(num1, num2);
+    return {};
+}
 /*
  10)
  */
-
+bool hasCreatedEnoughFunctions(int numberOfFunctionsCreated)
+{
+    ignoreUnused(numberOfFunctionsCreated);
+    return {};
+}
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
@@ -133,27 +190,27 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto catFed = feedCat(3);
     //2)
-    
+    auto degreesFahrenheit = centigradeToFahrenheit(65.4f);
     //3)
-    
+    auto sum = addThreeNumbers(4, 6);
     //4)
-    
+    walkDogs(5);
     //5)
-    
+    auto larger = largerCharacter('a', 'f');
     //6)
-    
+    auto speed = calculateSpeed(148.55, 1.5);
     //7)
-    
+    auto digitCount = countDigits(45677);
     //8)
-    
+    auto answer = squareRoot(235.0);
     //9)
-    
+    auto isGreater = isGreaterThan(234, 546);
     //10)
+    auto enough = hasCreatedEnoughFunctions(9);
     
-    
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, catFed, degreesFahrenheit, sum, larger, speed, digitCount, answer, isGreater, enough);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
