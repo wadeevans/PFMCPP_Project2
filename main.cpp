@@ -125,27 +125,51 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  5)
  */
-
+ char largerCharacter(char char1, char char2)
+ {
+     ignoreUnused(char1, char2);
+     return {};
+ }
 /*
  6)
  */
-
+ double calculateSpeed(double distanceInKilometers, double timeInHours)
+ {
+     ignoreUnused(distanceInKilometers, timeInHours);
+     return {};
+ } 
 /*
  7)
  */
-
+ int countDigits(int largeNumber)
+ {
+     ignoreUnused(largeNumber);
+     return {};
+ }
 /*
  8)
  */
-
+ double squareRoot(double number)
+ {
+     ignoreUnused(number);
+     return {};
+ }
 /*
  9)
  */
-
+ bool isGreaterThan(int num1, int num2)
+ {
+     ignoreUnused(num1, num2);
+     return {};
+ }
 /*
  10)
  */
-
+ bool hasCreatedEnoughFunctions(int numberOfFunctionsCreated)
+ {
+     ignoreUnused(numberOfFunctionsCreated);
+     return {};
+ }
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
@@ -174,19 +198,19 @@ int main()
     //4)
     walkDogs(5);
     //5)
-    
+    auto larger = largerCharacter('a', 'f');
     //6)
-    
+    auto speed = calculateSpeed(148.55, 1.5);
     //7)
-    
+    auto digitCount = countDigits(45677);
     //8)
-    
+    auto answer = squareRoot(235.0);
     //9)
-    
+    auto isGreater = isGreaterThan(234, 546);
     //10)
+    auto enough = hasCreatedEnoughFunctions(9);
     
-    
-    ignoreUnused(carRented, catFed, degreesFahrenheit, sum);
+    ignoreUnused(carRented, catFed, degreesFahrenheit, sum, larger, speed, digitCount, answer, isGreater, enough);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
